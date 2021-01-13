@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Ron Siu">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ron's room</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+    </head>
+
+    <body>
+        <div>
+            <table cellspacing="20">
+                <tr>
+                    <td><img src="./images/CS.jpg" width="150px" height="150px"></td>
+                    <td>
+                        <h1>😁Ron Siu</h1>
+                        <p>
+                            <em>Bachelor of Computer Science at<strong>
+                                    <a href="https://www.ucsd.edu/">UCSD🔱</a></strong></em>
+                        </p>
+                        <p>I am learning Web Development</p>
+                    </td>
+                </tr>
+            </table>
+            <aside>
+                <pre>"My grace is sufficient for you, for my power is made perfect in weakness.🔖"
+                    <a href="https://www.biblegateway.com/passage/?search=2%20Corinthians%2012%3A9&version=NIV">[2-Corinthians-12:9]</a>
+                </pre>
+            </aside>
+        </div>
+        <br />
+        <br />
+        <hr />
+        <div>
+            <h2>Education😁</h2>
+            <ul>
+                <li>
+                    <p>I am working on my bachelor degree in <b>Computer Science</b>💻
+                        at <i>University of California, San Diego</i>.
+                        I really enjoy the beach nearby <span style="color:blue">UCSD</span>.</p>
+                </li>
+                <li><a href="https://www.udemy.com/">Udemy♋</a></li>
+                <li> <a href="https://www.ucsd.edu/">UCSD</a></strong></em></li>
+                <img src="./images/UCSD.png" width="250px" height="150px">
+                <img src="./images/LaJolla.jpg" width="150px" height="150px">
+            </ul>
+        </div>
+
+        <hr />
+        <section>
+            <h3>Experience</h3>
+            <table cellspacing="10">
+                <thead>
+                    <tr>
+                        <th>Dates</th>
+                        <th>Work</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2019-2021</td>
+                        <td>Studying Computer Science at UCSD😁</td>
+                    </tr>
+                    <tr>
+                        <td>2016-2019</td>
+                        <td>Studying GE, Math, and some engineering at community college</td>
+                    </tr>
+                    <tr>
+                        <td>2017-2021</td>
+                        <td>Working part-time for living</td>
+                    </tr>
+                </tbody>
+                <tfoot>Trying to be good programmer</tfoot>
+            </table>
+        </section>
+        <hr />
+        <h3>Skills</h3>
+        <table>
+            <tr>
+                <td>
+            <tr>
+                <td>Java</td>
+                <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+                <td>C++</td>
+                <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>⭐⭐⭐</td>
+            </tr>
+            </td>
+            </tr>
+        </table>
+
+        <div>
+            <h3>Things that I like</h3>
+            <ol>
+                <li>Learn something new!!</li>
+                <li>Coffee
+                    <picture>
+                        <img src="./images/coffee.jpg" alt="Coffee" style="width:10%;">
+                    </picture>
+                </li>
+                <li>Boba</li>
+                <li>Sushi</li>
+                <li>Coding
+                    <iframe src="./HelloWorld.html" height="200" width="300" title="Iframe Example">
+                    </iframe></li>
+                <li>Sleep</li>
+                <li>Traveling</li>
+                <figure>
+                    <img src=" ./images/osaka-jo-castle.jpg" alt="osaka" style="width:50%">
+                    <figcaption>Picture of Osaka.</figcaption>
+                </figure>
+                <li>Ocean <br />
+                    <audio controls>
+                        <source src="wavebig.mp3" type="audio/mp3"> Wave sound
+                    </audio>
+                    <video width="320" height="240" autoplay>
+                        <source src="Ocean.mp4" type="video/mp4">
+                        Ocean Video
+                    </video>
+                </li>
+                <li>Greet everyone <br />
+                    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+                        Canvas</canvas>
+
+                    <svg width="300" height="200">
+                        <polygon points="100,10 40,198 190,78 10,78 160,198" style="fill:blue;stroke:yellow;stroke-width:5;fill-rule:evenodd;" />
+                    </svg>
+                </li>
+            </ol>
+            <h4>MY favorite Code</h4>
+            <ul>
+                <li><code>git add . </code> </li>
+                <li><code> git commit -m"new commit"</code></li>
+                <li> <code>git push</code></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Know more about me</h3>
+            <form>
+                <fieldset>
+                    <legend>Personalia:</legend>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="Ron"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Siu"><br>
+                </fieldset>
+            </form>
+            <br />
+            <label for="text">Write something that you want me to know</label><br />
+            <textarea id="message" name="messageArea" rows="3" cols="50">I hope you are having a great time of your visit!!
+            </textarea>
+            <br />
+            <label for="place">Type to guess the places that I love below:</label>
+            <input list="places" name="place" id="place">
+            <datalist id="places">
+                <option value="Japan">
+                <option value="Korea">
+                <option value="United States">
+                <option value="Australia">
+                <option value="Taiwan">
+            </datalist>
+            <br />
+            <label for="color-select">See the options of my favorite color</label>
+            <select id="color-select">
+                <optgroup label="Colors">
+                    <option>red</option>
+                    <option>blue</option>
+                    <option>yellow</option>
+                </optgroup>
+            </select>
+
+            <h3>My Favorite Game</h3>
+            <table>
+                <caption>Company and Games</caption>
+                <colgroup>
+                    <col span="1" style="background-color:yellow">
+                    <col span="1" style="background-color:#33FFE6">
+                <tr>
+                    <th>Nintendo and Niantic</th>
+                    <th>Pokemon Go</th>
+                </tr>
+                <tr>
+                    <td>FromSoftware, Inc.</td>
+                    <td>
+                        <details>
+                            <summary>Dark Souls III</summary>
+                            <p>Dark Souls III is an action role-playing game played in a third-person perspective, similar to previous games in the series. According to lead director and series creator Hidetaka Miyazaki, the game's gameplay design followed "closely from Dark Souls II
+                            </p>
+                        </details>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Koei and Sony</td>
+                    <td>
+
+                        <details>
+                            <summary>Nioh</summary>
+                            <p>Nioh is an action role-playing game set in Japan during the year 1600, with players taking the role of an Irish samurai named William. The player guides William on missions through enclosed environments fighting both human enemies and supernatural beings called yokai: missions are self-contained, hold alternate routes William can navigate, and selected from a menu rather than reached by navigating an open world.</p>
+                        </details>
+                    </td>
+                </tr>
+            </table>
+
+            <div id="container"></div>
+            <button type="button" onclick="alert('Hello world!')">Click!!!</button>
+            <button onclick="showContent()">Show hidden content</button>
+
+            <template>
+                <h4>Appending Picture</h4>      
+                <img src="https://picsum.photos/200/300" width="200" height="300">          
+            </template>
+            
+        </div>
+    </body>
+    <footer>
+        <p>Author: Ron Siu<br>
+            <nav>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML</a> |
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/">CSS</a> |
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">JavaScript</a> |
+                <a href="https://www.python.org/">Want to do python?</a>
+            </nav>
+            <a href="https://github.com/ronsiu-712/CSE110_Lab2">Github Link</a>
+        </p>
+        <script>
+            var canvas = document.getElementById("myCanvas");
+            var canvasContext = canvas.getContext("2d");
+            canvasContext.font = "30px Times New Roman";
+            canvasContext.fillText("Hello World", 20, 50);
+        </script>
+        <script>
+            function showContent() {
+                var temp = document.getElementsByTagName("template")[0];                    
+                var clon = temp.content.cloneNode(true);                   
+                document.body.appendChild(clon);
+            }
+        </script>
+    </footer>
+
+</html>
