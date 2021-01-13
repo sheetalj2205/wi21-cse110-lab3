@@ -15,7 +15,7 @@
     <div>
         <table>
             <tr>
-                <td><img src="./images/CS.jpg" width="150px" height="150px"></td>
+                <td><img src="./images/CS.jpg" alt="CS pic" width="150" height="150"></td>
                 <td>
                     <h1>😁Ron Siu</h1>
                     <p>
@@ -80,7 +80,9 @@
     <h3>Skills</h3>
     <table>
         <tr>
-            <td>
+            <th>Languages</th>
+            <th>Familiarities</th>
+        </tr>
         <tr>
             <td>Java</td>
             <td>⭐⭐⭐⭐⭐</td>
@@ -91,9 +93,7 @@
         </tr>
         <tr>
             <td>Python</td>
-            <td>⭐⭐⭐</td>
-        </tr>
-        </td>
+            <td>⭐⭐⭐⭐⭐</td>
         </tr>
     </table>
 
@@ -156,7 +156,7 @@
             </fieldset>
         </form>
         <br />
-        <label for="text">Write something that you want me to know</label><br />
+        <label for="message">Write something that you want me to know</label><br />
         <textarea id="message" name="messageArea" rows="3" cols="50">I hope you are having a great time of your visit!!
             </textarea>
         <br />
@@ -255,11 +255,11 @@
         </datalist>
 
         <ol>
-            <li><label>button</label> <input type="button" name="button" required size="10"> </li>
+            <li><label>button</label> <input type="button" name="button" value="Hit!"></li>
             <li><label>checkbox</label> <input type="checkbox"> </li>
             <li><label>color</label> <input type="color"> </li>
             <li><label>date</label> <input type="date"> </li>
-            <li><label>time</label> <input type="time" placeholder="time"> </li>
+            <li><label>time</label> <input type="time"> </li>
             <li><label>email</label> <input type="email" placeholder="xxx@ucsd.edu"> </li>
             <li><label>tel</label> <input type="tel" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                     required> </li>
@@ -274,30 +274,31 @@
             <li><label>url</label> <input type="url" list="url-list"> </li>
         </ol>
     </div>
+
+    <footer>
+        <p> Author: Ron Siu</p> <br>
+        <nav>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML</a> |
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/">CSS</a> |
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">JavaScript</a> |
+            <a href="https://www.python.org/">Want to do python?</a>
+        </nav>
+        <a href="https://github.com/ronsiu-712/CSE110_Lab2">Github Link</a>
+
+        <script>
+            var canvas = document.getElementById("myCanvas");
+            var canvasContext = canvas.getContext("2d");
+            canvasContext.font = "30px Times New Roman";
+            canvasContext.fillText("Hello World", 20, 50);
+        </script>
+        <script>
+            function showContent() {
+                var temp = document.getElementsByTagName("template")[0];
+                var clon = temp.content.cloneNode(true);
+                document.body.appendChild(clon);
+            }
+        </script>
+    </footer>
 </body>
-<footer>
-    <p>Author: Ron Siu<br>
-    <nav>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML</a> |
-        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/">CSS</a> |
-        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">JavaScript</a> |
-        <a href="https://www.python.org/">Want to do python?</a>
-    </nav>
-    <a href="https://github.com/ronsiu-712/CSE110_Lab2">Github Link</a>
-    </p>
-    <script>
-        var canvas = document.getElementById("myCanvas");
-        var canvasContext = canvas.getContext("2d");
-        canvasContext.font = "30px Times New Roman";
-        canvasContext.fillText("Hello World", 20, 50);
-    </script>
-    <script>
-        function showContent() {
-            var temp = document.getElementsByTagName("template")[0];
-            var clon = temp.content.cloneNode(true);
-            document.body.appendChild(clon);
-        }
-    </script>
-</footer>
 
 </html>
