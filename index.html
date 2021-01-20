@@ -9,12 +9,17 @@
     <title>Ron's room</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
+    <style>
+        .intro {
+            font-style: oblique;
+        }
+    </style>
 </head>
 
 <body>
     <main>
         <header>
-            <h1>Hi there, I am Ron😁</h1> <br />
+            <h1 class="intro">Hi there, I am Ron😁</h1> <br />
             <h1>Welcome to my room!!!!</h1>
         </header>
         <table>
@@ -38,23 +43,23 @@
     </main>
     <br />
     <br />
-    <hr />
-    <div>
+
+    <div id="education">
         <h2>Education😁</h2>
         <ul>
             <li>
                 <p>I am working on my bachelor degree in <b>Computer Science</b>💻
-                    at <i>University of California, San Diego</i>.
-                    I really enjoy the beach nearby <span style="color:blue">UCSD</span>.</p>
+                    at <i><b>University of California, San Diego</b></i>.
+                    I really enjoy the beach nearby <span style="color:blue"><a
+                            href="https://www.ucsd.edu/">UCSD</a></span>.</p>
             </li>
-
-            <li> <a href="https://www.ucsd.edu/">UCSD</a></li>
+            <li>I also studied abroad before.</li>
         </ul>
         <img src="./images/UCSD.png" alt="UCSD pic" width="250" height="150">
         <img src="./images/LaJolla.jpg" alt="La Jolla pic" width="150" height="150">
     </div>
 
-    <hr />
+
     <section>
         <h3>Experience</h3>
         <table>
@@ -80,27 +85,28 @@
 
         </table>
     </section>
-    <hr />
-    <h3>Skills</h3>
-    <table>
-        <tr>
-            <th>Languages</th>
-            <th>Familiarities</th>
-        </tr>
-        <tr>
-            <td>Java</td>
-            <td>⭐⭐⭐⭐⭐</td>
-        </tr>
-        <tr>
-            <td>C++</td>
-            <td>⭐⭐⭐⭐⭐</td>
-        </tr>
-        <tr>
-            <td>Python</td>
-            <td>⭐⭐⭐⭐⭐</td>
-        </tr>
-    </table>
-
+    <br /><br />
+    <div class="skills">
+        <h3>Skills</h3>
+        <table>
+            <tr>
+                <th>Languages</th>
+                <th>Familiarities</th>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+                <td>C++</td>
+                <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+        </table>
+    </div>
     <div>
         <h3>Things that I like</h3>
         <ol>
@@ -183,9 +189,9 @@
             </optgroup>
         </select>
 
-        <h3>My Favorite Game</h3>
+        <h3 style="color: coral;">My Favorite Game</h3>
         <table>
-            <caption>I do play games sometimes</caption>
+            <caption>I do play games sometimes, and here is the list of games I like.</caption>
             <colgroup>
                 <col span="1" style="background-color:yellow">
                 <col style="background-color:#33FFE6">
