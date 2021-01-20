@@ -9,6 +9,8 @@
     <title>Ron's room</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <style>
         .intro {
             font-style: oblique;
@@ -27,7 +29,7 @@
                 <td><img src="./images/CS.jpg" alt="CS pic" width="150" height="150"></td>
                 <td>
 
-                    <p>
+                    <p class="text1">
                         <em>Bachelor of Computer Science at<strong>
                                 <a href="https://www.ucsd.edu/">UCSD🔱</a></strong></em>
                     </p>
@@ -42,8 +44,8 @@
         </aside>
     </main>
     <br />
+    <hr />
     <br />
-
     <div id="education">
         <h2>Education😁</h2>
         <ul>
@@ -59,9 +61,9 @@
         <img src="./images/LaJolla.jpg" alt="La Jolla pic" width="150" height="150">
     </div>
 
-
-    <section>
-        <h3>Experience</h3>
+    <hr />
+    <section class="experience">
+        <h3 style="font-family: 'Courier New', Courier, monospace;">Experience</h3>
         <table>
             <thead>
                 <tr>
@@ -107,7 +109,7 @@
             </tr>
         </table>
     </div>
-    <div>
+    <div class="favoriteThings">
         <h3>Things that I like</h3>
         <ol>
             <li>Learn something new!!</li>
@@ -205,7 +207,8 @@
                 <td>
                     <details>
                         <summary>Pokémon Go</summary>
-                        <p>Pokémon Go is a 2016 augmented reality (AR) mobile game developed and published by Niantic in
+                        <p> <span class="text3">Pokémon Go</span> is a 2016 augmented reality (AR) mobile game developed
+                            and published by Niantic in
                             collaboration with Nintendo and The Pokémon Company for iOS and Android devices. A part of
                             the
                             Pokémon franchise, the game is the result of a collaboration between Niantic, Nintendo and
@@ -227,9 +230,9 @@
                 <td>
                     <details>
                         <summary>Dark Souls III</summary>
-                        <p>Dark Souls III is an action role-playing game played in a third-person perspective, similar
-                            to previous games in the series. According to lead director and series creator Hidetaka
-                            Miyazaki, the game's gameplay design followed "closely from Dark Souls II
+                        <p><i>Dark Souls III</i> is an action role-playing game played in a third-person perspective,
+                            similar to previous games in the series. According to lead director and series creator
+                            Hidetaka Miyazaki, the game's gameplay design followed "closely from Dark Souls II
                         </p>
                     </details>
                 </td>
@@ -260,7 +263,60 @@
         </template>
 
     </div>
+    <div class="pictures">
+        <h3>Pictures that represent me</h3>
+        <img id="pic01" src="./images/pic01.jpg" width="300" height="300">
+        <img id="pic02" src="./images/pic02.jpg" width="300" height="300">
+        <img id="pic03" src="./images/pic03.jpg" width="300" height="300">
+        <img id="pic04" src="./images/pic04.jpg" width="300" height="300">
+    </div>
+    <br />
+    <br />
+    <hr />
+    <h3 style=" margin-top: 50px;">Foods that I love when I was traveling in Japan</h3>
+    <div class="foodBox">
+        <div class="box1"><img src="./images/food1.jpg" alt="Unadon" width="300" height="300">
+            <p>Unadon is a classic Japanese dish that consists of steamed rice topped with grilled eel
+                fillets that
+                are glazed with a sweetened soy-based sauce (called tare) and caramelized, preferably over charcoal
+                fire. Unadon is a short word for Unagi (eel) Donburi (rice bowl dish).</p>
+        </div>
+        <div class="box2"><img src="./images/food2.jpg" alt="Sushi" width="300" height="300">
+            <p>Sashimi is thinly sliced raw meat, typically fish that is served without rice. </p>
+            <span>Sushi is also raw fish.</span>
+            <p>It is actually vinegar rice that is mixed with a number of other ingredients,
+                which can include either cooked or raw fish. </p>
+        </div>
+        <div class="box3"><img src="./images/food3.jpg" alt="Katsudon" width="300" height="300">
+            <p>Katsudon is a popular Japanese food, a bowl of rice topped with a deep-fried pork cutlet, egg,
+                vegetables, and condiments</p>
+        </div>
+        <div class="box4"><img src="./images/food4.jpg" alt="Takoyaki" width="300" height="300">
+            <p>Takoyaki is a ball-shaped Japanese snack made of a wheat flour-based batter and cooked in a special
+                molded pan. It is typically filled with minced or diced octopus, tempura scraps, pickled ginger, and
+                green onion.</p>
+        </div>
+    </div>
 
+    <hr />
+    <section>
+        <h3 class="guess">Can you guess where have I visited by these pictures?</h3>
+        <div class="places">
+            <div class="place-box1"><img src="./images/place1.jpg" alt="Sydney" width="300" height="300">
+
+            </div>
+            <div class="place-box2"><img src="./images/place2.jpg" alt="Osaka" width="500" height="300">
+
+            </div>
+            <div class="place-box3"><img src="./images/place3.jpg" alt="USJ" width="300" height="300">
+
+            </div>
+            <div class="place-box4"><img src="./images/place4.jpg" alt="TW" width="300" height="300">
+
+            </div>
+
+        </div>
+    </section>
     <div>
         <h3>Different types of input</h3>
         <datalist id="months">
