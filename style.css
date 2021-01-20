@@ -1,28 +1,203 @@
+* {
+  font-family: "Roboto Mono", monospace;
+}
+
 #education {
   text-align: center;
   border-width: thick;
   border-style: inset;
   border-color: royalblue;
   border-radius: 5%;
+  /* border: rounded-border; */
+  width: auto;
+  height: auto;
 }
 
-body {
-  /*Changing the background color to lightBlue*/
-  background-color: lightblue;
+.skills > h3 {
+  text-align: left;
+}
+.skills {
+  text-align: center;
+  border: 2px solid royalblue;
+  border-radius: 5px;
+  width: 55%;
+  height: 50%;
+  padding: 0 10px 0 100px;
+  margin: 5% 0 auto 20%;
+}
+
+.experience {
+  text-decoration: underline;
+  text-decoration-color: brown;
+  text-align: inherit;
+}
+
+.favoriteThings {
+  text-align: justify;
+  position: relative;
+  width: 550px;
+  height: auto;
+  border: 10px dotted royalblue;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  margin-top: 15ex;
+  margin-bottom: auto;
+  margin-left: 20%;
+  margin-right: 0;
+}
+
+.pictures #pic01 {
+  position: absolute;
+  opacity: 30%;
+  top: 40px;
+  left: 500px;
+}
+
+.pictures #pic02 {
+  position: relative;
+  top: 40px;
+  left: 40px;
+}
+
+div #pic03 {
+  position: relative;
+  top: 40px;
+  left: 40px;
+  right: 0%;
+}
+
+div #pic04 {
+  position: static;
+  top: 40px;
+  left: 40px;
+}
+
+.foodBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 800px) {
+  .foodBox {
+    flex-direction: column;
+  }
+}
+.foodBox > div {
+  background-color: #f1cece;
+  margin: 10px;
+  padding: 20px;
+  font-size: 12px;
+}
+
+.box1 {
+  flex: 1;
+  order: 1;
+}
+
+.box2 {
+  flex: 1;
+  order: 2;
+}
+
+.box3 {
+  flex: 1;
+  order: 3;
+  flex-basis: 200px;
+}
+.box4 {
+  flex: 1;
+  order: 4;
+  flex-shrink: 10;
+}
+
+.places {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.place-box1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 1;
+}
+
+.place-box2 {
+  grid-column: 2 / 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.place-box3 {
+  grid-column: 1;
+  grid-row: 2 / 5;
+}
+
+.place-box3 {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+/* unvisited link */
+a:link {
+  color: #000000;
+}
+
+/* visited link */
+a:visited {
+  color: #ce47bc;
+}
+
+/* Active links */
+a:active {
+  color: red;
+}
+
+/* hover link */
+a:hover {
+  background-color: yellow;
+}
+
+p .text1 {
+  display: inline;
+}
+
+p .text2 {
+  display: inline-block;
+}
+
+details p span.text3 {
+  color: coral;
+  display: block;
+}
+
+details[open] > summary {
+  background-color: #ccf;
+}
+
+details > p {
+  box-shadow: 3px 3px 4px black;
 }
 
 section {
   font-size: 18px;
   line-height: 2em;
 }
-.skills {
-  border: 2px solid royalblue;
-  border-radius: 5px;
-}
 
 h1 {
   color: rgb(0, 0, 128);
   margin-left: 20px;
+}
+
+h3[style="font-family: 'Courier New', Courier, monospace;"] {
+  color: rebeccapurple;
 }
 
 h2 {
@@ -31,6 +206,36 @@ h2 {
 
 h3 {
   color: hsla(30, 89%, 47%, 0.849);
+}
+
+h1,
+h2,
+h3 {
+  font-size: 24px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+li {
+  list-style-type: disc;
+}
+
+li li {
+  list-style-type: circle;
+}
+
+p ~ span {
+  color: rgb(245, 65, 65);
+  font: 1em sans-serif;
+}
+
+section .guess {
+  font-family: cursive;
+  font-style: italic;
+}
+
+li:first-of-type + li {
+  color: rgb(252, 238, 117);
+  font: 18px sans-serif;
 }
 
 i {
@@ -52,5 +257,21 @@ aside > pre {
   margin: 1rem;
   font-size: 0.5cm;
   font-family: sans-serif;
+
   line-height: 10mm;
+}
+body {
+  background-color: rgb(117, 250, 255);
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    background-color: lightgoldenrodyellow;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: lightblue;
+  }
 }
