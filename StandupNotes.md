@@ -3,9 +3,6 @@
 # Goals:
 * goals or direction for this week 
 
-## Current situation
-
-
 # Daily standup
 ## Monday, Date
 * Section responder: <name>
