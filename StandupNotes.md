@@ -10,7 +10,9 @@
 ## Monday, Date
 * Section responder: <name>
 * Coordinator: <name>
-* Tasks:
+* Any issue from yesterday:
+   * encounter...
+* Tasks for today:
    * setup...
    * Testing...
 * Updates:
@@ -20,7 +22,6 @@
    * related articles...
    * related videos...
 #### Reminder
-
 
 
 ### Tuesday, Date
