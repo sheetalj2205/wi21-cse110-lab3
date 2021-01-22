@@ -1,6 +1,5 @@
-# Standup Notes
+# Standup Template
 
-# Daily standup
 ## Monday, Date
 * What did I accomplish yesterday:
   * I have completed....
